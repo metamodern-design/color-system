@@ -19,8 +19,11 @@ const colors = (options = {}) => {
         (a, h) => a.set(`h${h}-s${s}-l${l}`, `hsl(${h},${s}%,${l}%)`)
         mp,
       );
-    };
-  };
+    });
+  });
   
   return mp;
 };
+
+
+export default colors;
