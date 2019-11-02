@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "lint": "eslint --fix main.js",
+    "lint": "eslint --fix main.js src",
     "release": "npm run lint && npm run build && np",
     "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
     "test": "npm run lint && npm run build && ava",
