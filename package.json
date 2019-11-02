@@ -1,0 +1,45 @@
+{
+  "name": "@danielnarey/color-system",
+  "version": "0.0.0",
+  "description": "An exportable HSL color system",
+  "author": "Daniel C. Narey",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielnarey/color-system"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/main.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint --fix main.js",
+    "release": "npm run lint && npm run build && np",
+    "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
+    "test": "npm run lint && npm run build && ava",
+    "update": "updtr"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ava": "^2.3.0",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-ava": "^8.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-types": "^1.0.2",
+    "esm": "^3.2.25",
+    "np": "^5.0.3",
+    "rollup": "^1.25.1",
+    "updtr": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
