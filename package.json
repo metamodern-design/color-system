@@ -23,6 +23,7 @@
     "update": "updtr"
   },
   "dependencies": {
+    "@arr/flatten": "^1.0.1",
     "@arr/foreach": "^1.0.1",
     "@arr/reduce": "^1.0.1"
   },

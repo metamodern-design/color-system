@@ -4,7 +4,7 @@ import shades from './shades';
 
 const grays = (options = {}) => reduce(
   shades(options),
-  (a, k) => a.set(`gray-${k}`, `hsl(0,0%,${k}%)`), 
+  (a, k) => a.set(`gray-${k}`, `hsl(0,0%,${k}%)`),
   new Map(),
 );
 

@@ -27,7 +27,7 @@ const secondary = ({
 
 const tertiary = ({
   redOrange = 30,
-  yellowOrange = 55, 
+  yellowOrange = 55,
   yellowGreen = 90,
   blueGreen = 210,
   bluePurple = 255,
@@ -45,7 +45,7 @@ const tertiary = ({
 
 const adjacent = ({
   redAdjacent = [315, 330, 345, 0, 15, 30, 45],
-  orangeAdjacent = [0, 15, 30, 45, 55, 60, 75], 
+  orangeAdjacent = [0, 15, 30, 45, 55, 60, 75],
   yellowAdjacent = [30, 45, 55, 60, 65, 75, 90],
   greenAdjacent = [90, 105, 135, 150, 165, 180, 195],
   blueAdjacent = [195, 210, 225, 240, 255, 270, 285],
@@ -73,10 +73,10 @@ const hues = (options = {}) => {
     [...named(options).values()],
     [...adjacent(options).values()],
   );
-  
+
   return [...new Set(everyHue)];
 };
-  
+
 
 export {
   hues as default,

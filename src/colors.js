@@ -21,7 +21,7 @@ const colors = (options = {}) => {
       );
     });
   });
-  
+
   return mp;
 };
 
