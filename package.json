@@ -23,6 +23,8 @@
     "update": "updtr"
   },
   "dependencies": {
+    "@arr/foreach": "^1.0.1",
+    "@arr/reduce": "^1.0.1"
   },
   "devDependencies": {
     "ava": "^2.3.0",
