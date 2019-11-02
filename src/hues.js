@@ -78,7 +78,7 @@ const all = (options = {}) => {
 };
   
 
-export default {
+const hues = {
   all,
   adjacent,
   named,
@@ -86,3 +86,6 @@ export default {
   secondary,
   tertiary,
 };
+
+
+export default hues;

@@ -1,6 +1,6 @@
-import colors from './src/colors';
-import grays from './src/grays';
-import mapToObject from './src/map-to-object';
+import colors from './colors';
+import grays from './grays';
+import mapToObject from './map-to-object';
 
 
 const theme = (options = {}) => ({

@@ -1,7 +1,7 @@
 import lsh from './lsh';
 
 
-const text = (options = {}) = ({
+const text = (options = {}) => ({
   dark: lsh(options)(17)(10),
   darker: lsh(options)(12)(10),
   light: lsh(options)(82)(55),
