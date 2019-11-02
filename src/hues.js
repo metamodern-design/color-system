@@ -68,7 +68,7 @@ const named = (options = {}) => new Map([
 ]);
 
 
-const all = (options = {}) => {
+const hues = (options = {}) => {
   const everyHue = flatten(
     [...named(options).values()],
     [...adjacent(options).values()],
@@ -78,14 +78,11 @@ const all = (options = {}) => {
 };
   
 
-const hues = {
-  all,
+export {
+  hues as default,
   adjacent,
   named,
   primary,
   secondary,
   tertiary,
 };
-
-
-export default hues;

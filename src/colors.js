@@ -8,7 +8,7 @@ import tones from './tones';
 const colors = (options = {}) => {
   const shadeLevels = shades(options.shades);
   const toneLevels = tones(options.tones);
-  const hueValues = hues.all(options.hues);
+  const hueValues = hues(options.hues);
 
   let mp = new Map();
 
