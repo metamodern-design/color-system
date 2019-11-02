@@ -16,7 +16,7 @@ const colors = (options = {}) => {
     forEach(toneLevels, (s) => {
       mp = reduce(
         hueValues,
-        (a, h) => a.set(`h${h}-s${s}-l${l}`, `hsl(${h},${s}%,${l}%)`)
+        (a, h) => a.set(`h${h}-s${s}-l${l}`, `hsl(${h},${s}%,${l}%)`),
         mp,
       );
     });
