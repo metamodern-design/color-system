@@ -9,14 +9,14 @@
     "url": "https://github.com/danielnarey/color-system"
   },
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/main.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "rollup -c",
-    "lint": "eslint --fix main.js src",
+    "lint": "eslint --fix index.js src",
     "release": "npm run lint && npm run build && np",
     "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
     "test": "npm run lint && npm run build && ava",
