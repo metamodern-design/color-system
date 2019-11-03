@@ -1,15 +1,6 @@
-function flat(arr, res) {
-	var i=0, cur, len=arr.length;
-	for (; i < len; i++) {
-		cur = arr[i];
-		Array.isArray(cur) ? flat(cur, res) : res.push(cur);
-	}
-	return res;
-}
-
-function flatten (arr) {
-	return flat(arr, []);
-}
+import flatten from '@arr/flatten';
+import forEach from '@arr/foreach';
+import reduce from '@arr/reduce';
 
 const primary = ({
   red = 0,
@@ -100,33 +91,6 @@ const bg = (options = {}) => ({
   lighter: lsh(options)(87)(10),
   medium: lsh(options)(37)(40),
 });
-
-function forEach (arr, fn) {
-	var i=0, len=arr.length;
-
-	for (; i < len; i++) {
-		fn(arr[i], i, arr);
-	}
-}
-
-function reduce (arr, fn, val) {
-	if (arr == null) {
-		return [];
-	}
-
-	var i=0, len=arr.length, out=val;
-
-	if (out === void 0) {
-		out = arr[0];
-		i = 1;
-	}
-
-	for (; i < len; i++) {
-		out = fn(out, arr[i], i, arr);
-	}
-
-	return out;
-}
 
 const range = (start, stop, step) => Array.from(
   { length: (stop - start) / step + 1 },

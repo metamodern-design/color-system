@@ -1,17 +1,10 @@
 'use strict';
 
-function flat(arr, res) {
-	var i=0, cur, len=arr.length;
-	for (; i < len; i++) {
-		cur = arr[i];
-		Array.isArray(cur) ? flat(cur, res) : res.push(cur);
-	}
-	return res;
-}
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-function flatten (arr) {
-	return flat(arr, []);
-}
+var flatten = _interopDefault(require('@arr/flatten'));
+var forEach = _interopDefault(require('@arr/foreach'));
+var reduce = _interopDefault(require('@arr/reduce'));
 
 const primary = ({
   red = 0,
@@ -102,33 +95,6 @@ const bg = (options = {}) => ({
   lighter: lsh(options)(87)(10),
   medium: lsh(options)(37)(40),
 });
-
-function forEach (arr, fn) {
-	var i=0, len=arr.length;
-
-	for (; i < len; i++) {
-		fn(arr[i], i, arr);
-	}
-}
-
-function reduce (arr, fn, val) {
-	if (arr == null) {
-		return [];
-	}
-
-	var i=0, len=arr.length, out=val;
-
-	if (out === void 0) {
-		out = arr[0];
-		i = 1;
-	}
-
-	for (; i < len; i++) {
-		out = fn(out, arr[i], i, arr);
-	}
-
-	return out;
-}
 
 const range = (start, stop, step) => Array.from(
   { length: (stop - start) / step + 1 },
