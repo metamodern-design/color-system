@@ -2,12 +2,12 @@ import test from 'ava';
 import colorSystem from '../dist/module';
 
 
-const defaultColors = colorSystem().colors;
+const theme = colorSystem().theme;
 
 
-test('default colors', (t) => {
+test('theme with default options', (t) => {
   t.is(
-    defaultColors.get('h30-s55-l62'),
+    theme['h30-s55-l62'],
     'hsl(30,55%,62%)',
   );  
 });
