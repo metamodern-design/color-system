@@ -3,10 +3,10 @@ import module from '../dist/module';
 import main from '../dist/main';
 
 
-const run = (bundle) => {
+const run = (name, bundle) => {
   const theme = bundle().theme;
 
-  test('theme with default options', (t) => {
+  test(`dist/${name}: theme`, (t) => {
     t.is(
       theme['h30-s55-l62'],
       'hsl(30,55%,62%)',
@@ -23,5 +23,5 @@ const run = (bundle) => {
 };
 
 
-run(module);
-run(main);
+run('module', module);
+run('main', main);
