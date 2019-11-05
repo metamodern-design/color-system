@@ -30,16 +30,13 @@ test('tones', (t) => {
 
 
 test('hues', (t) => {
-  const actual = hues();
-  const expected = [0, 15, 30, 45, 55, 60, 75, 105, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
+  const defaultHues = hues();
+  const expected = [0, 15, 30, 45, 55, 60, 65, 75, 105, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
   
-  t.true(expected.every((h) => actual.includes(h)));
-});
-
-
-test('colors', (t) => {
-  t.is(
-    colors().get('h315-s85-l77'),
-    'hsl(315,85%,77%)',
-  );  
+  t.true(expected.every((h) => defaultHues.includes(h)));
+  
+  const customPrimary = hues({ red: 355, yellow: 55, blue: 235 });
+  const customExpected = [].concat(expected, [355, 235]);
+  
+  t.true(customExpected.every((h) => customPrimary.includes(h)));
 });
