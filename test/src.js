@@ -33,7 +33,7 @@ test('hues', (t) => {
   const actual = hues();
   const expected = [0, 15, 30, 45, 55, 60, 75, 105, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
   
-  t.true(expected.every((h) => actual.includes(h));
+  t.true(expected.every((h) => actual.includes(h)));
 });
 
 
