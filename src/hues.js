@@ -69,10 +69,10 @@ const named = (options = {}) => new Map([
 
 
 const hues = (options = {}) => {
-  const everyHue = flatten(
-    [...named(options).values()],
-    [...adjacent(options).values()],
-  );
+  const everyHue = flatten([
+    ...named(options).values(),
+    ...adjacent(options).values(),
+  ]);
 
   return [...new Set(everyHue)];
 };
