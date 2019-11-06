@@ -1,4 +1,4 @@
-# @metamodern/color-system [![Build Status](https://travis-ci.com/metamodern/color-system.svg?branch=master)](https://travis-ci.com/metamodern/color-system) [![npm (scoped)](https://img.shields.io/npm/v/@metamodern/color-system)](https://www.npmjs.com/package/@metamodern/color-system) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@metamodern/color-system)
+# @metamodern/color-system [![Build Status](https://travis-ci.com/metamodern-design/color-system.svg?branch=master)](https://travis-ci.com/metamodern-design/color-system) [![npm (scoped)](https://img.shields.io/npm/v/@metamodern/color-system)](https://www.npmjs.com/package/@metamodern/color-system) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@metamodern/color-system)
 
 *A configurable HSL color system for use with [TailwindCSS](https://tailwindcss.com/)*
 
