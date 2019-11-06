@@ -37,7 +37,6 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-types": "^1.0.2",
     "esm": "^3.2.25",
-    "jsonfile": "^5.0.0",
     "np": "^5.0.3",
     "rollup": "^1.26.3",
     "rollup-plugin-commonjs": "^10.1.0",
