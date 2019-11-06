@@ -1,7 +1,7 @@
 {
-  "name": "@danielnarey/color-system",
+  "name": "@metamodern/color-system",
   "version": "0.0.0",
-  "description": "An exportable HSL color system",
+  "description": "A configurable HSL color system for use with TailwindCSS",
   "author": "Daniel C. Narey",
   "license": "ISC",
   "repository": {
@@ -15,8 +15,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
-    "lint": "eslint --fix index.js src",
+    "prebuild": "del dist/*",
+    "build": "rollup -c && node -r esm precompile.js",
+    "lint": "eslint --fix index.js precompile.js src",
     "release": "np",
     "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
     "test": "npm run lint && npm run build && ava",

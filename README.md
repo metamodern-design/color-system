@@ -1,1 +1,1 @@
-# color-system
+# @metamodern/color-system
