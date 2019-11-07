@@ -31,7 +31,7 @@ test('tones', (t) => {
 
 test('hues', (t) => {
   const defaultHues = hues();
-  const expected = [0, 15, 30, 45, 55, 60, 65, 75, 105, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
+  const expected = [0, 15, 30, 45, 55, 60, 65, 75, 90, 105, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
   
   t.true(expected.every((h) => defaultHues.includes(h)));
   

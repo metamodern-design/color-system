@@ -21,7 +21,7 @@ Grayscale values use the format `gray-62`, which includes only the lightness val
 
 With default options, HSL combinations are generated from the following value ranges:
 
-- **Hue**: 0, 15, 30, 45, 55, 60, 65, 75, 105, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345
+- **Hue**: 0, 15, 30, 45, 55, 60, 65, 75, 90, 105, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345
 - **Saturation**: 10, 25, 40, 55, 70, 85
 - **Lightness**: 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87
 
