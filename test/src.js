@@ -8,7 +8,7 @@ import tones from '../src/tones';
 test('shades', (t) => {
   t.deepEqual(
     shades(),
-    [12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87],
+    [12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92],
   );
   t.deepEqual(
     shades({ start: 0, stop: 100, step: 25 }),
