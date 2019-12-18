@@ -1,17 +1,17 @@
-import bg from './src/bg';
-import colors from './src/colors';
-import grays from './src/grays';
+import bgColorMap from './src/bg-color-map';
+import grayscaleMap from './src/grayscale-map';
+import hslColorMap from './src/hsl-color-map';
 import lsh from './src/lsh';
-import text from './src/text';
+import textColorMap from './src/text-color-map';
 import theme from './src/theme';
 
 
 const colorSystem = (options = {}) => ({
-  bg: bg(options),
-  colors: colors(options),
-  grays: grays(options),
+  bgColorMap: bgColorMap(options),
+  grayscaleMap: grayscaleMap(options),
+  hslColorMap: hslColorMap(options),
   lsh: lsh(options),
-  text: text(options),
+  textColorMap: textColorMap(options),
   theme: theme(options),
 });
 

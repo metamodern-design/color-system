@@ -5,25 +5,26 @@ import shades from './shades';
 import tones from './tones';
 
 
-const colors = (options = {}) => {
+const hslColorMap = (options = {}) => {
   const shadeLevels = shades(options.shades);
   const toneLevels = tones(options.tones);
   const hueValues = hues(options.hues);
-
+  
   let mp = new Map();
-
+  
   forEach(shadeLevels, (l) => {
     forEach(toneLevels, (s) => {
-      mp = reduce(
-        hueValues,
-        (a, h) => a.set(`h${h}-s${s}-l${l}`, `hsl(${h},${s}%,${l}%)`),
-        mp,
-      );
+      forEach(hueValues, (h) => {
+        mp.set(
+          `h${h}-s${s}-l${l}`,
+          `hsl(${h},${s}%,${l}%)`,
+        );
+      });
     });
   });
-
+  
   return mp;
 };
 
 
-export default colors;
+export default hslColorMap;
