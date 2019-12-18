@@ -7,7 +7,7 @@ import mapToObject from './map-to-object';
 
 const theme = (options = {}) => {
   const grayscaleObj = mapToObject(grayscaleMap(options.shades));
-  const hslColorObj = mapToObject(hslColors(options));
+  const hslColorObj = mapToObject(hslColorMap(options));
   
   const colors = {
     ...grayscaleObj,

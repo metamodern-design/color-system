@@ -1,5 +1,4 @@
 import forEach from '@arr/foreach';
-import reduce from '@arr/reduce';
 import hues from './hues';
 import shades from './shades';
 import tones from './tones';

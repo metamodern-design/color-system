@@ -13,8 +13,8 @@ const text = (options = {}) => {
     ['light', _lsh(87)(25)],
     ['lighter', _lsh(92)(25)],
     ['medium-dark', _lsh(22)(25)],
-    ['dark', _lsh(17)(10)]
-    ['darker', _lsh(12)(10)]
+    ['dark', _lsh(17)(10)],
+    ['darker', _lsh(12)(10)],
   ]);
 };
 

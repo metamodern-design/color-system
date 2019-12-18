@@ -12,8 +12,8 @@ const bgPalette = (options = {}) => {
     ['light', _lsh(82)(55)],
     ['lighter', _lsh(87)(25)],
     ['medium-dark', _lsh(47)(55)],
-    ['dark', _lsh(37)(40)]
-    ['darker', _lsh(22)(25)]
+    ['dark', _lsh(37)(40)],
+    ['darker', _lsh(22)(25)],
   ]);
 };
 
