@@ -7,8 +7,8 @@ const textColorMap = (options = {}) => {
   const textPaletteEntries = [...textPalette(options).entries()];
   const namedHueEntries = [...named(options).entries()];
 
-  let mp = new Map();
-  
+  const mp = new Map();
+
   forEach(textPaletteEntries, ([textName, partial]) => {
     mp.set(
       `text-${textName}`,

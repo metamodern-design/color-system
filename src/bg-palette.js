@@ -3,7 +3,7 @@ import lsh from './lsh';
 
 const bgPalette = (options = {}) => {
   const _lsh = lsh(options);
-  
+
   return options.bgPalette || new Map([
     ['bright', _lsh(62)(85)],
     ['soft', _lsh(57)(55)],

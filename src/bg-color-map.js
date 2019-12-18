@@ -7,8 +7,8 @@ const bgColorMap = (options = {}) => {
   const bgPaletteEntries = [...bgPalette(options).entries()];
   const namedHueEntries = [...named(options).entries()];
 
-  let mp = new Map();
-  
+  const mp = new Map();
+
   forEach(bgPaletteEntries, ([bgName, partial]) => {
     mp.set(
       `bg-${bgName}`,

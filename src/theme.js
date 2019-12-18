@@ -8,7 +8,7 @@ import mapToObject from './map-to-object';
 const theme = (options = {}) => {
   const grayscaleObj = mapToObject(grayscaleMap(options.shades));
   const hslColorObj = mapToObject(hslColorMap(options));
-  
+
   const colors = {
     ...grayscaleObj,
     ...hslColorObj,
@@ -35,12 +35,12 @@ const theme = (options = {}) => {
     ...mapToObject(textColorMap(options)),
     ...maybeFullPalette,
   };
-  
+
   const borderColor = {
     default: options.defaultBorderColor || 'transparent',
     ...textColor,
   };
-  
+
   return {
     colors,
     borderColor,

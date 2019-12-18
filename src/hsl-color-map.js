@@ -8,9 +8,9 @@ const hslColorMap = (options = {}) => {
   const shadeLevels = shades(options.shades);
   const toneLevels = tones(options.tones);
   const hueValues = hues(options.hues);
-  
-  let mp = new Map();
-  
+
+  const mp = new Map();
+
   forEach(shadeLevels, (l) => {
     forEach(toneLevels, (s) => {
       forEach(hueValues, (h) => {
@@ -21,7 +21,7 @@ const hslColorMap = (options = {}) => {
       });
     });
   });
-  
+
   return mp;
 };
 
