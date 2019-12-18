@@ -1,5 +1,4 @@
 import test from 'ava';
-import colors from '../src/colors';
 import hues from '../src/hues';
 import shades from '../src/shades';
 import tones from '../src/tones';
