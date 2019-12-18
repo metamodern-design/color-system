@@ -65,74 +65,74 @@ const run = (name, bundle) => {
   
   test(`dist/${name}: theme.backgroundColor`, (t) => {
     t.is(
-      defaultSystem.backgroundColor['light'],
+      defaultSystem.theme.backgroundColor['light'],
       'hsl(0,0%,82%)',
     );
     t.is(
-      defaultSystem.backgroundColor['light-blue'],
+      defaultSystem.theme.backgroundColor['light-blue'],
       'hsl(240,55%,82%)',
     );
     t.is(
-      defaultSystem.backgroundColor['medium-light-red-orange'],
+      defaultSystem.theme.backgroundColor['medium-light-red-orange'],
       'hsl(30,70%,72%)',
     );
     
     t.falsy(
-      defaultSystem.backgroundColor['h30-s55-l62'],
+      defaultSystem.theme.backgroundColor['h30-s55-l62'],
     );
     t.is(
-      fullPalette.backgroundColor['h30-s55-l62'],
+      fullPalette.theme.backgroundColor['h30-s55-l62'],
       'hsl(30,55%,62%)',
     );
   });
   
   test(`dist/${name}: theme.textColor`, (t) => {
     t.is(
-      defaultSystem.textColor['light'],
+      defaultSystem.theme.textColor['light'],
       'hsl(0,0%,87%)',
     );
     t.is(
-      defaultSystem.textColor['light-blue'],
+      defaultSystem.theme.textColor['light-blue'],
       'hsl(240,25%,87%)',
     );
     t.is(
-      defaultSystem.textColor['medium-light-red-orange'],
+      defaultSystem.theme.textColor['medium-light-red-orange'],
       'hsl(30,55%,82%)',
     );
     
     t.falsy(
-      defaultSystem.textColor['h240-s85-l32'],
+      defaultSystem.theme.textColor['h240-s85-l32'],
     );
     t.is(
-      fullPalette.textColor['h240-s85-l32'],
+      fullPalette.theme.textColor['h240-s85-l32'],
       'hsl(240,85%,32%)',
     );
   });
   
   test(`dist/${name}: theme.borderColor`, (t) => {
     t.is(
-      defaultSystem.borderColor['light'],
+      defaultSystem.theme.borderColor['light'],
       'hsl(0,0%,87%)',
     );
     t.is(
-      defaultSystem.borderColor['light-blue'],
+      defaultSystem.theme.borderColor['light-blue'],
       'hsl(240,25%,87%)',
     );
     t.is(
-      defaultSystem.borderColor['medium-light-red-orange'],
+      defaultSystem.theme.borderColor['medium-light-red-orange'],
       'hsl(30,55%,82%)',
     );
     
     t.falsy(
-      defaultSystem.borderColor['h240-s85-l32'],
+      defaultSystem.theme.borderColor['h240-s85-l32'],
     );
     t.is(
-      fullPalette.borderColor['h240-s85-l32'],
+      fullPalette.theme.borderColor['h240-s85-l32'],
       'hsl(240,85%,32%)',
     );
     
     t.is(
-      defaultSystem.borderColor['default'],
+      defaultSystem.theme.borderColor['default'],
       'transparent',
     );
   });
