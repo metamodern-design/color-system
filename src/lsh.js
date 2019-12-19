@@ -6,7 +6,7 @@ const lsh = (options = {}) => (l = 62) => (s = 0) => (h) => {
     return `hsl(0,0%,${l}%)`;
   }
   
-  const namedHue = names(options).get(h);
+  const namedHue = named(options).get(h);
 
   if (!namedHue && namedHue !== 0) {
     return `hsl(${namedHue},${s}%,${l}%)`;
