@@ -41,7 +41,23 @@ const run = (name, bundle) => {
     t.is(
       defaultSystem.lsh(83)(66)(11),
       'hsl(11,66%,83%)',
-    );  
+    );
+    t.is(
+      defaultSystem.lsh(83)(66)(0),
+      'hsl(0,66%,83%)',
+    );
+    t.is(
+      defaultSystem.lsh(83)(66)('red'),
+      'hsl(0,66%,83%)',
+    );
+    t.is(
+      defaultSystem.lsh(83)(66)('blue-green'),
+      'hsl(210,66%,83%)',
+    );
+    t.is(
+      defaultSystem.lsh(83)(66)(),
+      'hsl(0,0%,83%)',
+    );
   });
 
   test(`dist/${name}: theme.colors`, (t) => {
