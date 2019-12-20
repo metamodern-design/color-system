@@ -9,7 +9,7 @@
     "url": "https://github.com/metamodern-design/color-system"
   },
   "type": "module",
-  "main": "dist/main.cjs",
+  "main": "dist/main.cfjs",
   "module": "dist/module.js",
   "files": [
     "dist"
@@ -50,6 +50,16 @@
     "access": "public"
   },
   "ava": {
+    "babel": {
+      "testOptions": {
+        "presets": [
+          [
+            "module:ava/stage-4", 
+            { "modules": false }
+          ]
+        ]
+      }
+    },
     "require": [
       "esm"
     ]
