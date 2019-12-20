@@ -50,10 +50,10 @@
     "access": "public"
   },
   "ava": {
+    "require": [
+      "esm"
+    ],
     "babel": {
-      "require": [
-        "esm"
-      ],
       "testOptions": {
         "presets": [
           [
