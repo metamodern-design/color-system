@@ -51,6 +51,9 @@
   },
   "ava": {
     "babel": {
+      "require": [
+        "esm"
+      ],
       "testOptions": {
         "presets": [
           [
@@ -59,9 +62,6 @@
           ]
         ]
       }
-    },
-    "require": [
-      "esm"
-    ]
+    }
   }
 }
