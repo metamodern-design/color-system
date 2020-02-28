@@ -9,7 +9,7 @@ export default [
     external: Object.keys(pkg.dependencies),
     output: [
       { file: pkg.main, format: 'cjs' },
-      { file: pkg.module, format: 'es' }
+      { file: pkg.module, format: 'es' },
     ],
     plugins: [
       nodeResolve(),

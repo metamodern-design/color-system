@@ -10,6 +10,7 @@
   },
   "type": "module",
   "main": "dist/main.cjs",
+  "module": "dist/module.js",
   "exports": {
     "import": "dist/module.js",
     "require": "dist/main.cjs"
