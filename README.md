@@ -15,15 +15,16 @@ With Tailwind and PostCSS, it is possible to generate a large number of CSS clas
 
 ## Named Background Colors
 
-Named background colors correspond to HSL combinations as follows: 
-
-- `.bg-bright-red => h0-s85-l62`
-- `.bg-soft-red => h0-s55-l57`
-- `.bg-softer-red => h0-s40-l52`
-- `.bg-medium-light-red => h0-s70-l72`
-- `.bg-light-red => h0-s55-l82`
+Named background colors correspond to HSL combinations as follows:
+    
 - `.bg-lighter-red => h0-s25-l87`
-- `.bg-medium-dark-red => h0-s55-l47`
+- `.bg-light-red => h0-s55-l82`
+- `.bg-medium-light-red => h0-s70-l77`
+- `.bg-softer-red => h0-s55-l72`
+- `.bg-soft-red => h0-s70-l67`
+- `.bg-bright-red => h0-s85-l62`
+- `.bg-medium-red => h0-s70-l47`
+- `.bg-medium-dark-red => h0-s55-l42`
 - `.bg-dark-red => h0-s40-l37`
 - `.bg-darker-red => h0-s25-l22`
 
@@ -49,15 +50,15 @@ The color names `black` (`#000`), `white` (`#FFF`), and `transparent` are also i
 
 Named text colors correspond to HSL combinations as follows: 
 
+- `.text-lighter-red => h0-s25-l92`
+- `.text-light-red => h0-s40-l87`
+- `.text-medium-light-red => h0-s55-l82`
+- `.text-softer-red => h0-s55-l72`
+- `.text-soft-red => h0-s70-l67`
 - `.text-bright-red => h0-s85-l62`
 - `.text-medium-red => h0-s70-l47`
-- `.text-soft-red => h0-s70-l67`
-- `.text-softer-red => h0-s55-l72`
-- `.text-medium-light-red => h0-s55-l82`
-- `.text-light-red => h0-s25-l87`
-- `.text-lighter-red => h0-s25-l92`
-- `.text-medium-dark-red => h0-s25-l22`
-- `.text-dark-red => h0-s10-l17`
+- `.text-medium-dark-red => h0-s40-l27`
+- `.text-dark-red => h0-s25-l17`
 - `.text-darker-red => h0-s10-l12`
 
 **Substitute "border" for "text" to set the border color.**
