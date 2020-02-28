@@ -22,3 +22,9 @@ rules:
   import/no-extraneous-dependencies:
     - error
     - devDependencies: true
+  import/extensions:
+    - error
+    - always
+    - ignorePackages: true
+
+
