@@ -1,5 +1,6 @@
-import test from 'ava';
-import main from '../dist/main';
+const test = require('ava');
+const main = require('../dist/main');
+const module = require('../dist/module');
 
 
 const run = (name, bundle) => {
@@ -155,3 +156,4 @@ const run = (name, bundle) => {
 
 
 run('main', main);
+run('module', module);

@@ -1,7 +1,7 @@
-import test from 'ava';
-import hues from '../src/hues';
-import shades from '../src/shades';
-import tones from '../src/tones';
+const test = require('ava');
+const hues = require('../src/hues');
+const shades = require('../src/shades');
+const tones = require('../src/tones');
 
 
 test('shades', (t) => {
