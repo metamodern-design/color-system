@@ -15,7 +15,7 @@
     "./esm": "./dist/esm.js"
   },
   "files": [
-    "./dist"
+    "dist"
   ],
   "scripts": {
     "prebuild": "del dist/*",
