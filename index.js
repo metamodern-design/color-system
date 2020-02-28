@@ -1,9 +1,9 @@
-import bgColorMap from './src/bg-color-map';
-import grayscaleMap from './src/grayscale-map';
-import hslColorMap from './src/hsl-color-map';
-import lsh from './src/lsh';
-import textColorMap from './src/text-color-map';
-import theme from './src/theme';
+import bgColorMap from './src/bg-color-map.js';
+import grayscaleMap from './src/grayscale-map.js';
+import hslColorMap from './src/hsl-color-map.js';
+import lsh from './src/lsh.js';
+import textColorMap from './src/text-color-map.js';
+import theme from './src/theme.js';
 
 
 const colorSystem = (options = {}) => ({
