@@ -1,6 +1,6 @@
-const test = require('ava');
-const main = require('../dist/main');
-const module = require('../dist/module');
+import test from 'ava';
+import main from '../dist/main.cjs';
+import module from '../dist/module.js';
 
 
 const run = (name, bundle) => {
