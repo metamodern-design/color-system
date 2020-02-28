@@ -1,7 +1,7 @@
 import forEach from '@arr/foreach';
-import hues from './hues';
-import shades from './shades';
-import tones from './tones';
+import hues from './hues.js';
+import shades from './shades.js';
+import tones from './tones.js';
 
 
 const hslColorMap = (options = {}) => {

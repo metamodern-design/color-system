@@ -1,4 +1,4 @@
-import lsh from './lsh';
+import lsh from './lsh.js';
 
 
 const bgPalette = (options = {}) => {

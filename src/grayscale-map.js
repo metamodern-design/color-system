@@ -1,5 +1,5 @@
 import reduce from '@arr/reduce';
-import shades from './shades';
+import shades from './shades.js';
 
 
 const grays = (options = {}) => reduce(

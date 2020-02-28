@@ -1,6 +1,6 @@
 import forEach from '@arr/foreach';
-import bgPalette from './bg-palette';
-import { named } from './hues';
+import bgPalette from './bg-palette.js';
+import { named } from './hues.js';
 
 
 const bgColorMap = (options = {}) => {

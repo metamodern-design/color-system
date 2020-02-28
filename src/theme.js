@@ -1,8 +1,8 @@
-import bgColorMap from './bg-color-map';
-import grayscaleMap from './grayscale-map';
-import hslColorMap from './hsl-color-map';
-import textColorMap from './text-color-map';
-import mapToObject from './map-to-object';
+import bgColorMap from './bg-color-map.js';
+import grayscaleMap from './grayscale-map.js';
+import hslColorMap from './hsl-color-map.js';
+import textColorMap from './text-color-map.js';
+import mapToObject from './map-to-object.js';
 
 
 const theme = (options = {}) => {

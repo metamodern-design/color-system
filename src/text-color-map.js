@@ -1,6 +1,6 @@
 import forEach from '@arr/foreach';
-import textPalette from './text-palette';
-import { named } from './hues';
+import textPalette from './text-palette.js';
+import { named } from './hues.js';
 
 
 const textColorMap = (options = {}) => {

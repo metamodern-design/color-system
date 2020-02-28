@@ -1,7 +1,7 @@
-import test import 'ava';
-import hues import '../src/hues.js';
-import shades import '../src/shades.js';
-import tones import '../src/tones.js';
+import test from 'ava';
+import hues from '../src/hues.js';
+import shades from '../src/shades.js';
+import tones from '../src/tones.js';
 
 
 test('shades', (t) => {

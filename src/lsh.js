@@ -1,4 +1,4 @@
-import { named } from './hues';
+import { named } from './hues.js';
 
 
 const lsh = (options = {}) => (l = 62) => (s = 0) => (h) => {
