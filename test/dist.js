@@ -81,15 +81,15 @@ const run = (name, bundle) => {
   test(`dist/${name}: theme.backgroundColor`, (t) => {
     t.is(
       defaultSystem.theme.backgroundColor['light'],
-      'hsl(0,0%,82%)',
+      'hsl(0,0%,87%)',
     );
     t.is(
       defaultSystem.theme.backgroundColor['light-blue'],
-      'hsl(240,55%,82%)',
+      'hsl(240,40%,87%)',
     );
     t.is(
       defaultSystem.theme.backgroundColor['medium-light-red-orange'],
-      'hsl(30,70%,77%)',
+      'hsl(30,55%,82%)',
     );
     
     t.falsy(
