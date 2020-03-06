@@ -5,7 +5,7 @@
 
 ## What
 
-With default options, this package generates **117 named background colors** and **130 named text/border colors** that may be added to your Tailwind configuration to generate CSS utility classes. Additionally, the package generates a full palette of **2416 numeric HSL colors** that can be referenced from the `theme.colors` key of your Tailwind configuration.
+With default options, this package generates **130 named colors** that may be added to your Tailwind configuration to generate CSS utility classes. Additionally, the package generates a full palette of **2416 numeric HSL colors** that can be referenced from the `theme.colors` key of your Tailwind configuration.
 
 ## Why
 
@@ -13,20 +13,20 @@ Identity and branding considerations demand unique color palettes for company we
 
 With Tailwind and PostCSS, it is possible to generate a large number of CSS classes and [only include the ones you actually use](https://tailwindcss.com/docs/controlling-file-size#removing-unused-css) as part of the resulting CSS bundle. Taking advantage of this feature, *@metamodern/color-system* defines a full range of hues, shades, and tones that allow for complete color customization via CSS classes without an additional configuration step. 
 
-## Named Background Colors
+## Named Colors
 
-Named background colors correspond to HSL combinations as follows:
+Named colors are ready to use out of the box with the Tailwind prefix `bg-`, `text-`, or `border-`. Each color name combines a shade/tone variation and a hue, as follows: 
     
-- `.bg-lighter-red => h0-s25-l87`
-- `.bg-light-red => h0-s55-l82`
-- `.bg-medium-light-red => h0-s70-l77`
-- `.bg-softer-red => h0-s55-l72`
-- `.bg-soft-red => h0-s70-l67`
-- `.bg-bright-red => h0-s85-l62`
-- `.bg-medium-red => h0-s70-l47`
-- `.bg-medium-dark-red => h0-s55-l42`
-- `.bg-dark-red => h0-s40-l37`
-- `.bg-darker-red => h0-s25-l22`
+- `lighter-red => h0-s25-l92`
+- `light-red => h0-s40-l87`
+- `medium-light-red => h0-s55-l82`
+- `softer-red => h0-s55-l72`
+- `soft-red => h0-s70-l67`
+- `bright-red => h0-s85-l62`
+- `medium-red => h0-s70-l47`
+- `medium-dark-red => h0-s40-l27`
+- `dark-red => h0-s25-l17`
+- `darker-red => h0-s10-l12`
 
 Substitute any of the following named hues for "red" in the last portion of the class name:
 
@@ -46,26 +46,6 @@ Leaving out the hue name, as in `.bg-medium-light`, gives a shade of gray (`.gra
 
 The color names `black` (`#000`), `white` (`#FFF`), and `transparent` are also included in the configuration.
 
-## Named Text/Border Colors
-
-Named text colors correspond to HSL combinations as follows: 
-
-- `.text-lighter-red => h0-s25-l92`
-- `.text-light-red => h0-s40-l87`
-- `.text-medium-light-red => h0-s55-l82`
-- `.text-softer-red => h0-s55-l72`
-- `.text-soft-red => h0-s70-l67`
-- `.text-bright-red => h0-s85-l62`
-- `.text-medium-red => h0-s70-l47`
-- `.text-medium-dark-red => h0-s40-l27`
-- `.text-dark-red => h0-s25-l17`
-- `.text-darker-red => h0-s10-l12`
-
-**Substitute "border" for "text" to set the border color.**
-
-The same named hues are available as for background colors. Leaving out the hue name gives a shade of gray.
-
-The color names `black` (`#000`), `white` (`#FFF`), and `transparent` are also included in the configuration.
 
 ## HSL Reference Colors
 
