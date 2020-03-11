@@ -24,8 +24,8 @@ const theme = (options = {}) => {
     transparent: 'transparent',
     black: '#000',
     white: '#fff',
-    'near-black': hsl(0,0%,12%),
-    'near-white': hsl(0,0%,97%),
+    'near-black': 'hsl(0,0%,12%)',
+    'near-white': 'hsl(0,0%,97%)',
     ...mapToObject(bgColorMap(options)),
     ...maybeFullPalette,
   };
@@ -34,8 +34,8 @@ const theme = (options = {}) => {
     transparent: 'transparent',
     black: '#000',
     white: '#fff',
-    'near-black': hsl(0,0%,12%),
-    'near-white': hsl(0,0%,97%),
+    'near-black': 'hsl(0,0%,12%)',
+    'near-white': 'hsl(0,0%,97%)',
     ...mapToObject(textColorMap(options)),
     ...maybeFullPalette,
   };
