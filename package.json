@@ -1,6 +1,6 @@
 {
   "name": "@metamodern/color-system",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "A configurable HSL color system for use with TailwindCSS",
   "author": "Daniel C. Narey <os@metamodern.design>",
   "license": "ISC",
