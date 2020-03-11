@@ -89,7 +89,7 @@ const run = (name, bundle) => {
     );
     t.is(
       defaultSystem.theme.backgroundColor['medium-light-red-orange'],
-      'hsl(30,55%,82%)',
+      'hsl(30,55%,77%)',
     );
     
     t.falsy(
@@ -112,7 +112,7 @@ const run = (name, bundle) => {
     );
     t.is(
       defaultSystem.theme.textColor['medium-light-red-orange'],
-      'hsl(30,55%,82%)',
+      'hsl(30,55%,77%)',
     );
     
     t.falsy(
@@ -135,7 +135,7 @@ const run = (name, bundle) => {
     );
     t.is(
       defaultSystem.theme.borderColor['medium-light-red-orange'],
-      'hsl(30,55%,82%)',
+      'hsl(30,55%,77%)',
     );
     
     t.falsy(
