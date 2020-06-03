@@ -19,7 +19,7 @@
   "scripts": {
     "prebuild": "del dist/*",
     "build": "rollup -c",
-    "lint": "eslint --fix index.js src",
+    "lint": "eslint --fix src",
     "release": "np",
     "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
     "test": "npm run lint && npm run build && ava",
@@ -31,14 +31,14 @@
     "@arr/reduce": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^3.5.1",
-    "del-cli": "^3.0.0",
-    "eslint": "^6.8.0",
+    "ava": "^3.8.2",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.1.0",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-ava": "^10.2.0",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-ava": "^10.3.0",
+    "eslint-plugin-import": "^2.20.2",
     "np": "^5.2.1",
-    "rollup": "^2.2.0",
+    "rollup": "^2.13.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "updtr": "^3.1.0"
