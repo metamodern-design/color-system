@@ -14,9 +14,11 @@ const textColorMap = (options = {}) => {
 
   _named.forEach(
     (hueValue, hueName) => {
-      _textPalette.forEach((partial, textName) => {
-        mp.set(`${textName}-${hueName}`, partial(hueValue));
-      });
+      _textPalette.forEach(
+        (partial, textName) => {
+          mp.set(`${textName}-${hueName}`, partial(hueValue));
+        },
+      );
     },
   );
 

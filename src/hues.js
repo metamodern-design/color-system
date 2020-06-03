@@ -66,10 +66,9 @@ const named = (options = {}) => new Map([
 
 
 const hues = (options = {}) => {
-  const everyHue = [].concat(
-    ...named(options).values(),
-    ...adjacent(options).values(),
-  );
+  const namedValues = [...named(options).values()];
+  const adjacentGroups = [...adjacent(options).values()];
+  const everyHue = [].concat(namedValues, ...adjacentGroups);
 
   return [...new Set(everyHue)];
 };

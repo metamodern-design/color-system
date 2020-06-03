@@ -14,9 +14,11 @@ const bgColorMap = (options = {}) => {
 
   _named.forEach(
     (hueValue, hueName) => {
-      _bgPalette.forEach((partial, bgName) => {
-        mp.set(`${bgName}-${hueName}`, partial(hueValue));
-      });
+      _bgPalette.forEach(
+        (partial, bgName) => {
+          mp.set(`${bgName}-${hueName}`, partial(hueValue));
+        },
+      );
     },
   );
 
