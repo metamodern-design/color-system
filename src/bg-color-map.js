@@ -9,12 +9,12 @@ const bgColorMap = (options = {}) => {
   const mp = new Map();
 
   _bgPalette.forEach(
-    ([bgName, partial]) => { mp.set(bgName, partial()); },
+    (partial, bgName) => { mp.set(bgName, partial()); },
   );
 
   _named.forEach(
-    ([hueName, hueValue]) => {
-      _bgPalette.forEach(([bgName, partial]) => {
+    (hueValue, hueName) => {
+      _bgPalette.forEach((partial, bgName) => {
         mp.set(`${bgName}-${hueName}`, partial(hueValue));
       });
     },

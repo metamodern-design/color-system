@@ -4,7 +4,7 @@ import lsh from './lsh.js';
 const text = (options = {}) => {
   const _lsh = lsh(options);
 
-  return options.textPalette || [
+  return options.textPalette || new Map([
     ['lighter', _lsh(92)(25)],
     ['light', _lsh(87)(40)],
     ['medium-light', _lsh(77)(55)],
@@ -15,7 +15,7 @@ const text = (options = {}) => {
     ['medium-dark', _lsh(32)(55)],
     ['dark', _lsh(22)(40)],
     ['darker', _lsh(17)(40)],
-  ];
+  ]);
 };
 
 
