@@ -1,29 +1,24 @@
-import forEach from '@arr/foreach';
 import textPalette from './text-palette.js';
 import { named } from './hues.js';
 
 
 const textColorMap = (options = {}) => {
-  const textPaletteEntries = [...textPalette(options).entries()];
-  const namedHueEntries = [...named(options).entries()];
+  const _textPalette = textPalette(options);
+  const _named = named(options);
 
   const mp = new Map();
 
-  forEach(textPaletteEntries, ([textName, partial]) => {
-    mp.set(
-      textName,
-      partial(),
-    );
-  });
+  _textPalette.forEach(
+    ([textName, partial]) => { mp.set(textName, partial()); },
+  );
 
-  forEach(namedHueEntries, ([hueName, hueValue]) => {
-    forEach(textPaletteEntries, ([textName, partial]) => {
-      mp.set(
-        `${textName}-${hueName}`,
-        partial(hueValue),
-      );
-    });
-  });
+  _named.forEach(
+    ([hueName, hueValue]) => {
+      _textPalette.forEach(([textName, partial]) => {
+        mp.set(`${textName}-${hueName}`, partial(hueValue));
+      });
+    },
+  );
 
   return mp;
 };

@@ -25,11 +25,7 @@
     "test": "npm run lint && npm run build && ava",
     "update": "updtr"
   },
-  "dependencies": {
-    "@arr/flatten": "^1.0.1",
-    "@arr/foreach": "^1.0.1",
-    "@arr/reduce": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ava": "^3.8.2",
     "del-cli": "^3.0.1",
@@ -39,8 +35,6 @@
     "eslint-plugin-import": "^2.20.2",
     "np": "^5.2.1",
     "rollup": "^2.13.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "updtr": "^3.1.0"
   },
   "engines": {

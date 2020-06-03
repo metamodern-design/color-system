@@ -1,16 +1,13 @@
-import flatten from '@arr/flatten';
-
-
 const primary = ({
   red = 0,
   yellow = 60,
   blue = 240,
   rotation = 0,
-} = {}) => new Map([
+} = {}) => [
   ['red', red + rotation],
   ['yellow', yellow + rotation],
   ['blue', blue + rotation],
-]);
+];
 
 
 const secondary = ({
@@ -18,11 +15,11 @@ const secondary = ({
   green = 150,
   purple = 270,
   rotation = 0,
-} = {}) => new Map([
+} = {}) => [
   ['orange', orange + rotation],
   ['green', green + rotation],
   ['purple', purple + rotation],
-]);
+];
 
 
 const tertiary = ({
@@ -33,14 +30,14 @@ const tertiary = ({
   bluePurple = 255,
   redPurple = 300,
   rotation = 0,
-} = {}) => new Map([
+} = {}) => [
   ['red-orange', redOrange + rotation],
   ['yellow-orange', yellowOrange + rotation],
   ['yellow-green', yellowGreen + rotation],
   ['blue-green', blueGreen + rotation],
   ['blue-purple', bluePurple + rotation],
   ['red-purple', redPurple + rotation],
-]);
+];
 
 
 const adjacent = ({
@@ -51,28 +48,28 @@ const adjacent = ({
   blueAdjacent = [195, 210, 225, 240, 255, 270, 285],
   purpleAdjacent = [225, 240, 255, 270, 285, 300, 315],
   rotation = 0,
-} = {}) => new Map([
+} = {}) => [
   ['red', redAdjacent.map((h) => h + rotation)],
   ['orange', orangeAdjacent.map((h) => h + rotation)],
   ['yellow', yellowAdjacent.map((h) => h + rotation)],
   ['green', greenAdjacent.map((h) => h + rotation)],
   ['blue', blueAdjacent.map((h) => h + rotation)],
   ['purple', purpleAdjacent.map((h) => h + rotation)],
-]);
+];
 
 
 const named = (options = {}) => new Map([
-  ...primary(options).entries(),
-  ...secondary(options).entries(),
-  ...tertiary(options).entries(),
+  ...primary(options),
+  ...secondary(options),
+  ...tertiary(options),
 ]);
 
 
 const hues = (options = {}) => {
-  const everyHue = flatten([
+  const everyHue = [].concat(
     ...named(options).values(),
     ...adjacent(options).values(),
-  ]);
+  );
 
   return [...new Set(everyHue)];
 };

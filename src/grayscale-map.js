@@ -1,9 +1,7 @@
-import reduce from '@arr/reduce';
 import shades from './shades.js';
 
 
-const grays = (options = {}) => reduce(
-  shades(options),
+const grays = (options = {}) => shades(options).reduce(
   (a, k) => a.set(`gray-${k}`, `hsl(0,0%,${k}%)`),
   new Map(),
 );
