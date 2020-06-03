@@ -40,6 +40,13 @@ const tertiary = ({
 ];
 
 
+const named = (options = {}) => new Map([
+  ...primary(options),
+  ...secondary(options),
+  ...tertiary(options),
+]);
+
+
 const adjacent = ({
   redAdjacent = [315, 330, 345, 0, 15, 30, 45],
   orangeAdjacent = [0, 15, 30, 45, 55, 60, 65],
@@ -48,20 +55,13 @@ const adjacent = ({
   blueAdjacent = [195, 210, 225, 240, 255, 270, 285],
   purpleAdjacent = [225, 240, 255, 270, 285, 300, 315],
   rotation = 0,
-} = {}) => [
+} = {}) => new Map([
   ['red', redAdjacent.map((h) => h + rotation)],
   ['orange', orangeAdjacent.map((h) => h + rotation)],
   ['yellow', yellowAdjacent.map((h) => h + rotation)],
   ['green', greenAdjacent.map((h) => h + rotation)],
   ['blue', blueAdjacent.map((h) => h + rotation)],
   ['purple', purpleAdjacent.map((h) => h + rotation)],
-];
-
-
-const named = (options = {}) => new Map([
-  ...primary(options),
-  ...secondary(options),
-  ...tertiary(options),
 ]);
 
 
@@ -76,9 +76,5 @@ const hues = (options = {}) => {
 
 export {
   hues as default,
-  adjacent,
   named,
-  primary,
-  secondary,
-  tertiary,
 };
