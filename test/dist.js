@@ -1,11 +1,11 @@
 import test from 'ava';
-import bundle from '../dist/index.js';
+import colorSystem from '../dist/index.js';
 
 
-const defaultSystem = bundle();
-const fullPalette = bundle({ includeFullPalette: true });
+const defaultSystem = colorSystem();
+const fullPalette = colorSystem({ includeFullPalette: true });
 
-test(`dist/${name}: colors`, (t) => {
+test(`dist: colors`, (t) => {
   t.is(
     defaultSystem.hslColorMap.get('h45-s70-l27'),
     'hsl(45,70%,27%)',
@@ -20,7 +20,7 @@ test(`dist/${name}: colors`, (t) => {
   );
 });
 
-test(`dist/${name}: grays`, (t) => {
+test(`dist: grays`, (t) => {
   t.is(
     defaultSystem.grayscaleMap.get('gray-12'),
     'hsl(0,0%,12%)',
@@ -35,7 +35,7 @@ test(`dist/${name}: grays`, (t) => {
   );
 });
 
-test(`dist/${name}: lsh`, (t) => {
+test(`dist: lsh`, (t) => {
   t.is(
     defaultSystem.lsh(83)(66)(11),
     'hsl(11,66%,83%)',
@@ -58,7 +58,7 @@ test(`dist/${name}: lsh`, (t) => {
   );
 });
 
-test(`dist/${name}: theme.colors`, (t) => {
+test(`dist: theme.colors`, (t) => {
   t.is(
     defaultSystem.theme.colors['h30-s55-l62'],
     'hsl(30,55%,62%)',
@@ -77,7 +77,7 @@ test(`dist/${name}: theme.colors`, (t) => {
   );
 });
 
-test(`dist/${name}: theme.backgroundColor`, (t) => {
+test(`dist: theme.backgroundColor`, (t) => {
   t.is(
     defaultSystem.theme.backgroundColor['light'],
     'hsl(0,0%,87%)',
@@ -100,7 +100,7 @@ test(`dist/${name}: theme.backgroundColor`, (t) => {
   );
 });
 
-test(`dist/${name}: theme.textColor`, (t) => {
+test(`dist: theme.textColor`, (t) => {
   t.is(
     defaultSystem.theme.textColor['light'],
     'hsl(0,0%,87%)',
@@ -123,7 +123,7 @@ test(`dist/${name}: theme.textColor`, (t) => {
   );
 });
 
-test(`dist/${name}: theme.borderColor`, (t) => {
+test(`dist: theme.borderColor`, (t) => {
   t.is(
     defaultSystem.theme.borderColor['light'],
     'hsl(0,0%,87%)',
