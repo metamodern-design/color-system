@@ -52,7 +52,6 @@ const theme = (options = {}) => {
     borderColor,
     backgroundColor,
     textColor,
-    placeholderColor: textColor,
   };
 };
 
