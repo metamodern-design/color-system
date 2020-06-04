@@ -15,7 +15,6 @@ plugins:
 
 rules:
   no-underscore-dangle: off
-  no-restricted-syntax: off
   import/no-extraneous-dependencies:
     - error
     - devDependencies: [ test/*.js ]
