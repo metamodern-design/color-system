@@ -21,6 +21,7 @@ const theme = (options = {}) => {
   );
 
   const backgroundColor = {
+    current: 'currentColor',
     transparent: 'transparent',
     black: '#000',
     white: '#fff',
@@ -31,6 +32,7 @@ const theme = (options = {}) => {
   };
 
   const textColor = {
+    current: 'currentColor',
     transparent: 'transparent',
     black: '#000',
     white: '#fff',
