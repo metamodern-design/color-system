@@ -38,4 +38,9 @@ test('hues', (t) => {
   const customExpected = [].concat(expected, [355, 235]);
   
   t.true(customExpected.every((h) => customPrimary.includes(h)));
+  
+  const rotatedHues = hues({ hueRotation: -10 });
+  const rotatedExpected = [350, 5, 20, 35, 45, 50, 55, 65, 80, 95, 125, 140, 155, 170, 185, 200, 215, 230, 245, 260, 275, 290, 305, 320, 335];
+  
+  t.true(rotatedExpected.every((h) => rotatedHues.includes(h)));
 });
