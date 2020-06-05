@@ -4,9 +4,9 @@ import tones from './tones.js';
 
 
 const hslColorMap = (options = {}) => {
-  const _shades = shades(options.shades);
-  const _tones = tones(options.tones);
-  const _hues = hues(options.hues);
+  const _shades = shades(options);
+  const _tones = tones(options);
+  const _hues = hues(options);
 
   const mp = new Map();
 

@@ -1,11 +1,9 @@
 import range from './range.js';
 
 
-const tones = ({
-  start = 10,
-  stop = 85,
-  step = 15,
-} = {}) => range(start, stop, step);
+const tones = (options = {}) => (
+  options.tones || range(10, 85, 15)
+);
 
 
 export default tones;
