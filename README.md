@@ -15,18 +15,20 @@ With Tailwind and PostCSS, it is possible to generate a large number of CSS clas
 
 ## Named Colors
 
+**See our [docs site](https://system.metamodern.design/color-palette) for a full visual guide to the named color palette**
+
 Named colors are ready to use out of the box with the Tailwind prefix `bg-`, `text-`, or `border-`. Each color name combines a shade/tone variation and a hue, as follows: 
     
 - `lighter-red => h0-s25-l92`
 - `light-red => h0-s40-l87`
-- `medium-light-red => h0-s55-l82`
-- `softer-red => h0-s55-l72`
-- `soft-red => h0-s70-l67`
+- `medium-light-red => h0-s55-l77`
 - `bright-red => h0-s85-l62`
+- `soft-red => h0-s55-l62`
+- `softer-red => h0-s40-l57`
 - `medium-red => h0-s70-l47`
-- `medium-dark-red => h0-s40-l27`
-- `dark-red => h0-s25-l17`
-- `darker-red => h0-s10-l12`
+- `medium-dark-red => h0-s55-l32`
+- `dark-red => h0-s40-l22`
+- `darker-red => h0-s40-l17`
 
 Substitute any of the following named hues for "red" in the last portion of the class name:
 
