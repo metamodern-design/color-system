@@ -4,7 +4,6 @@ import hslColorMap from './hsl-color-map.js';
 import textColorMap from './text-color-map.js';
 import mapToObject from './map-to-object.js';
 
-
 const theme = (options = {}) => {
   const grayscaleObj = mapToObject(grayscaleMap(options));
   const hslColorObj = mapToObject(hslColorMap(options));
@@ -54,6 +53,5 @@ const theme = (options = {}) => {
     textColor,
   };
 };
-
 
 export default theme;

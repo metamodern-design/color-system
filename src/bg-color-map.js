@@ -1,7 +1,6 @@
 import bgPalette from './bg-palette.js';
 import { named } from './hues.js';
 
-
 const bgColorMap = (options = {}) => {
   const _bgPalette = bgPalette(options);
   const _named = named(options);
@@ -24,6 +23,5 @@ const bgColorMap = (options = {}) => {
 
   return mp;
 };
-
 
 export default bgColorMap;

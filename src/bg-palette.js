@@ -1,6 +1,5 @@
 import lsh from './lsh.js';
 
-
 const bgPalette = (options = {}) => {
   const _lsh = lsh(options);
 
@@ -17,6 +16,5 @@ const bgPalette = (options = {}) => {
     ['darker', _lsh(17)(40)],
   ]);
 };
-
 
 export default bgPalette;

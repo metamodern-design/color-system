@@ -1,6 +1,5 @@
 import shades from './shades.js';
 
-
 const grays = (options = {}) => {
   const mp = new Map();
 
@@ -10,6 +9,5 @@ const grays = (options = {}) => {
 
   return mp;
 };
-
 
 export default grays;

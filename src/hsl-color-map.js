@@ -2,7 +2,6 @@ import hues from './hues.js';
 import shades from './shades.js';
 import tones from './tones.js';
 
-
 const hslColorMap = (options = {}) => {
   const _shades = shades(options);
   const _tones = tones(options);
@@ -20,6 +19,5 @@ const hslColorMap = (options = {}) => {
 
   return mp;
 };
-
 
 export default hslColorMap;

@@ -5,7 +5,6 @@ import lsh from './lsh.js';
 import textColorMap from './text-color-map.js';
 import theme from './theme.js';
 
-
 const colorSystem = (options = {}) => ({
   bgColorMap: bgColorMap(options),
   grayscaleMap: grayscaleMap(options),
@@ -14,6 +13,5 @@ const colorSystem = (options = {}) => ({
   textColorMap: textColorMap(options),
   theme: theme(options),
 });
-
 
 export default colorSystem;

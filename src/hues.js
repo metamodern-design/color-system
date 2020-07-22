@@ -9,7 +9,6 @@ const primary = ({
   ['blue', blue + hueRotation],
 ];
 
-
 const secondary = ({
   orange = 45,
   green = 150,
@@ -20,7 +19,6 @@ const secondary = ({
   ['green', green + hueRotation],
   ['purple', purple + hueRotation],
 ];
-
 
 const tertiary = ({
   redOrange = 30,
@@ -39,13 +37,11 @@ const tertiary = ({
   ['red-purple', redPurple + hueRotation],
 ];
 
-
 const named = (options = {}) => new Map([
   ...primary(options),
   ...secondary(options),
   ...tertiary(options),
 ]);
-
 
 const adjacent = ({
   redAdjacent = [315, 330, 345, 0, 15, 30, 45],
@@ -64,7 +60,6 @@ const adjacent = ({
   ['purple', purpleAdjacent.map((h) => h + hueRotation)],
 ]);
 
-
 const hues = (options = {}) => {
   const namedValues = [...named(options).values()];
   const adjacentGroups = [...adjacent(options).values()];
@@ -72,7 +67,6 @@ const hues = (options = {}) => {
 
   return [...new Set(everyHue)];
 };
-
 
 export {
   hues as default,

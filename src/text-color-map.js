@@ -1,7 +1,6 @@
 import textPalette from './text-palette.js';
 import { named } from './hues.js';
 
-
 const textColorMap = (options = {}) => {
   const _textPalette = textPalette(options);
   const _named = named(options);
@@ -24,6 +23,5 @@ const textColorMap = (options = {}) => {
 
   return mp;
 };
-
 
 export default textColorMap;
